@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova - Startup Company</title>
+
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background-color: #f8f9fc; }
+
+.navbar {
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: white;
+  border: none;
+}
+.btn-gradient:hover { opacity: 0.9; }
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero-overlay {
+  position:absolute;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.6);
+}
+.hero-content { position:relative; z-index:2; max-width:800px; }
+
+.section-padding { padding:100px 0; }
+
+.icon-box {
+  font-size:40px;
+  margin-bottom:20px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.card-hover {
+  transition:0.3s ease;
+}
+.card-hover:hover {
+  transform:translateY(-8px);
+  box-shadow:0 15px 40px rgba(0,0,0,0.1);
+}
+
+.stats {
+  background: linear-gradient(135deg,#4f46e5,#06b6d4);
+  color:white;
+}
+
+.portfolio img {
+  transition:0.4s ease;
+}
+.portfolio img:hover {
+  transform:scale(1.05);
+}
+
+.testimonial-card {
+  background:white;
+  border-radius:15px;
+  padding:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+footer {
+  background:#111827;
+  color:#9ca3af;
+}
+footer a {
+  color:#9ca3af;
+  margin:0 10px;
+  font-size:20px;
+}
+footer a:hover { color:white; }
+
+@media (max-width:768px){
+  .hero { background-attachment:scroll; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold gradient-text" href="#">
+      <i class="bi bi-cpu-fill me-2"></i>TechNova
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="display-4 fw-bold mb-4">
+      <i class="bi bi-rocket-takeoff-fill"></i><br>
+      Empowering Innovation with <span class="gradient-text">Modern Technology</span>
+    </h1>
+    <p class="lead mb-4">
+      We build scalable digital solutions that drive business growth.
+    </p>
+    <a href="#contact" class="btn btn-gradient btn-lg px-5 py-3">
+      <i class="bi bi-lightning-charge-fill me-2"></i>Get Started
+    </a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section-padding">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Our Features</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4 card-hover">
+          <div class="icon-box"><i class="bi bi-cloud-arrow-up-fill"></i></div>
+          <h5>Cloud Solutions</h5>
+          <p>Reliable and scalable cloud infrastructure services.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 card-hover">
+          <div class="icon-box"><i class="bi bi-cpu-fill"></i></div>
+          <h5>AI Integration</h5>
+          <p>Smart automation to improve efficiency.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4 card-hover">
+          <div class="icon-box"><i class="bi bi-shield-lock-fill"></i></div>
+          <h5>Cyber Security</h5>
+          <p>Advanced data protection and monitoring systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section-padding bg-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Our Projects</h2>
+    <div class="row g-4 portfolio">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="section-padding stats text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>150+</h2>
+        <p>Projects Completed</p>
+      </div>
+      <div class="col-md-3">
+        <h2>100+</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div class="col-md-3">
+        <h2>25</h2>
+        <p>Team Members</p>
+      </div>
+      <div class="col-md-3">
+        <h2>5+</h2>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section-padding">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">What Clients Say</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p>"TechNova transformed our digital platform completely!"</p>
+          <strong>- Sarah Johnson</strong>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p>"Professional team with outstanding results."</p>
+          <strong>- Michael Brown</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section-padding bg-white">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            What services do you offer?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We offer cloud solutions, AI integration, cybersecurity, and custom software development.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+            How can we start a project?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Simply contact us via the contact form and our team will reach out.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-padding">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4"><i class="bi bi-envelope-fill me-2"></i>Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn btn-gradient px-4">
+            <i class="bi bi-send-fill me-2"></i>Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-4">
+  <div class="container">
+    <p>© 2026 TechNova. All Rights Reserved.</p>
+    <div>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
